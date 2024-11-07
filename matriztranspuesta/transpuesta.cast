@@ -1,0 +1,13 @@
+{"version": 2, "width": 120, "height": 30, "timestamp": 1730964680, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.014074, "o", "\u001b[?2004h\u001b]0;root@ip-172-31-19-76: /home/ubuntu/assignments06/matriztranspuesta\u0007root@ip-172-31-19-76:/home/ubuntu/assignments06/matriztranspuesta# "]
+[8.689626, "o", "\u001b[7mas -g matriz_trans.s -o matriz_trans.o\u001b[27m"]
+[9.555468, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bas -g matriz_trans.s -o matriz_trans.o\r\n\u001b[?2004l\r"]
+[9.55988, "o", "\u001b[?2004h\u001b]0;root@ip-172-31-19-76: /home/ubuntu/assignments06/matriztranspuesta\u0007root@ip-172-31-19-76:/home/ubuntu/assignments06/matriztranspuesta# "]
+[18.762138, "o", "\u001b[7mgcc matriz_trans.o -o matriz_trans\u001b[27m"]
+[19.940457, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\bgcc matriz_trans.o -o matriz_trans\r\n\u001b[?2004l\r"]
+[19.962609, "o", "\u001b[?2004h\u001b]0;root@ip-172-31-19-76: /home/ubuntu/assignments06/matriztranspuesta\u0007root@ip-172-31-19-76:/home/ubuntu/assignments06/matriztranspuesta# "]
+[25.149007, "o", "\u001b[7m./matriz_trans\u001b[27m"]
+[26.07594, "o", "\b\b\b\b\b\b\b\b\b\b\b\b\b\b./matriz_trans\r\n\u001b[?2004l\r"]
+[26.076917, "o", "\r\nMatriz Original:\r\n  1   2   3 \r\n  4   5   6 \r\n  7   8   9 \r\n\r\nMatriz Transpuesta:\r\n  1   4   7 \r\n  2   5   8 \r\n  3   6   9 \r\n"]
+[26.07721, "o", "\u001b[?2004h\u001b]0;root@ip-172-31-19-76: /home/ubuntu/assignments06/matriztranspuesta\u0007root@ip-172-31-19-76:/home/ubuntu/assignments06/matriztranspuesta# "]
+[29.36946, "o", "\u001b[?2004l\r\r\nexit\r\n"]
