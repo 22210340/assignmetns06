@@ -1,6 +1,7 @@
 // *********************************************************************
 // Autor: Rivas Perez Kevin /IA CLAUDE 
 // Descripción: Suma de 2 numeros
+// VIDEO: https://asciinema.org/a/rVfJESZH4HgcA6uQPCGrkVEYf
 // *********************************************************************
 
 .global _start
@@ -140,3 +141,56 @@ convert_digit:
     b convert_digit
 end_convert:
     ret
+
+    //c#
+
+    /* using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            // Solicitar primer número
+            Console.Write("Ingrese primer número: ");
+            string input1 = Console.ReadLine();
+            int num1 = AsciiToInt(input1);
+
+            // Solicitar segundo número
+            Console.Write("Ingrese segundo número: ");
+            string input2 = Console.ReadLine();
+            int num2 = AsciiToInt(input2);
+
+            // Realizar la suma
+            int resultado = num1 + num2;
+
+            // Mostrar el resultado
+            Console.WriteLine("La suma es: " + resultado);
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error al convertir el número ingresado.");
+        }
+    }
+
+    // Función para convertir un string ASCII a un entero
+    static int AsciiToInt(string asciiInput)
+    {
+        int result = 0;
+
+        foreach (char digitChar in asciiInput)
+        {
+            if (digitChar == '\n' || digitChar == '\r') continue; // Ignorar salto de línea
+            int digit = digitChar - '0'; // Convertir carácter a dígito
+            if (digit < 0 || digit > 9)
+            {
+                throw new FormatException("Caracter no válido en la entrada.");
+            }
+            result = result * 10 + digit;
+        }
+
+        return result;
+    }
+}
+*/
