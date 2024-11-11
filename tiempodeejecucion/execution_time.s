@@ -1,7 +1,7 @@
 //************************************************
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que mide el tiempo de ejecucion
-// 
+// VIDEO: https://asciinema.org/a/cbR7Fg4Dh94Bq4t1TfJhZvLaO
 //************************************************
 
 .arch armv8-a
