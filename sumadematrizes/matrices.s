@@ -2,6 +2,7 @@
 // Autor: Rivas Perez Kevin/IA Claude
 // Descripción: Programa que suma dos matrices 2D
 // Suma dos matrices de 3x3 y muestra el resultado
+// VIDEO: https://asciinema.org/a/zIZPFN00iVfhvTzu7cPlRPX15
 //************************************************
 
     .data
