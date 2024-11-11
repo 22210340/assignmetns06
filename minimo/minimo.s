@@ -3,6 +3,7 @@
 // Descripción: Programa que encuentra el valor mínimo en un arreglo de números.
 // El usuario ingresa la cantidad de números y luego los números uno por uno.
 // El programa muestra el arreglo completo y encuentra el valor mínimo.
+// VIDEO: https://asciinema.org/a/aH6JgESPg1MW2mkfGOZfzbSwO
 //************************************************
 
 .data
@@ -115,3 +116,56 @@ fin:
     mov     w0, #0
     ldp     x29, x30, [sp], 16
     ret
+
+    //C# 
+
+    /* using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Solicitar tamaño del arreglo
+        Console.WriteLine("Ingrese la cantidad de números (máximo 20): ");
+        int size = int.Parse(Console.ReadLine());
+
+        // Verificar que el tamaño sea válido (entre 1 y 20)
+        if (size < 1 || size > 20)
+        {
+            Console.WriteLine("El tamaño debe estar entre 1 y 20.");
+            return;
+        }
+
+        // Inicializar el arreglo
+        int[] array = new int[size];
+
+        // Leer los números
+        for (int i = 0; i < size; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i + 1}: ");
+            array[i] = int.Parse(Console.ReadLine());
+        }
+
+        // Mostrar el arreglo ingresado
+        Console.WriteLine("\nArreglo ingresado:");
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write(array[i] + " ");
+        }
+        Console.WriteLine();
+
+        // Encontrar el valor mínimo en el arreglo
+        int min = int.MaxValue; // Inicializar el mínimo con el valor más grande posible
+        for (int i = 0; i < size; i++)
+        {
+            if (array[i] < min)
+            {
+                min = array[i];
+            }
+        }
+
+        // Mostrar el valor mínimo encontrado
+        Console.WriteLine($"\nEl valor mínimo es: {min}");
+    }
+}
+*/
