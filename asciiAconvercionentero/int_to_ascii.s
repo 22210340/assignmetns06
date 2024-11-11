@@ -1,3 +1,6 @@
+//VIDEO: https://asciinema.org/a/pfhqoyuCeNO1h8M9f86XVmsmc
+    
+    
     .data
 msg_ingreso:    .string "Ingrese un número entero (0-9): "
 msg_resultado:  .string "El carácter ASCII es: %c\n"
