@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que verifica si un número es
 // Armstrong (ej: 153 = 1^3 + 5^3 + 3^3)
+// VIDEO: https://asciinema.org/a/WT05OdM5SMw5HuqPv6eEk607S
 //************************************************
 
 .data
