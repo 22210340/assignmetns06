@@ -3,6 +3,7 @@
 // Descripción: Programa en ensamblador ARM64 que solicita un número N 
 //              al usuario y calcula la suma de los primeros N números
 //              naturales (1 + 2 + 3 + ... + N), mostrando el resultado.
+// VIDEO: https://asciinema.org/a/jzEm0aJd05N0lDI4erAd8DZTY
 // *********************************************************************
 
 .global _start
@@ -165,3 +166,54 @@ convert_digit:
     b convert_digit
 end_convert:
     ret
+
+    //C# 
+    /* using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            // Solicitar al usuario el número N
+            Console.Write("Ingrese un número N: ");
+            string input = Console.ReadLine();
+            int n = AsciiToInt(input);
+
+            // Calcular la suma de los primeros N números naturales usando la fórmula suma = n * (n + 1) / 2
+            int suma = n * (n + 1) / 2;
+
+            // Mostrar el resultado
+            Console.WriteLine($"La suma de los primeros {n} números naturales es: {suma}");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: La entrada no es un número válido.");
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Error: El número ingresado es demasiado grande.");
+        }
+    }
+
+    // Función para convertir una cadena ASCII a un entero
+    static int AsciiToInt(string asciiInput)
+    {
+        int result = 0;
+
+        foreach (char digitChar in asciiInput)
+        {
+            if (digitChar == '\n' || digitChar == '\r') continue; // Ignorar saltos de línea
+            int digit = digitChar - '0'; // Convertir carácter a dígito
+            if (digit < 0 || digit > 9)
+            {
+                throw new FormatException("Caracter no válido en la entrada.");
+            }
+            result = result * 10 + digit;
+        }
+
+        return result;
+    }
+}
+*/
