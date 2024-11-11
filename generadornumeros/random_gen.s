@@ -3,6 +3,7 @@
 // Descripción: Programa que genera números aleatorios
 // utilizando el método congruencial lineal
 // Fórmula: siguiente = (multiplicador * actual + incremento) % módulo
+// VIDEO: https://asciinema.org/a/wvXjeCelBvO2ob3YjgGm9IYT9
 //************************************************
 
 .data
