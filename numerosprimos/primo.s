@@ -4,6 +4,7 @@
 // es primo o no. Un número primo es aquel que solo es divisible por 1 y
 // por sí mismo. El programa verifica esto probando divisiones desde 2
 // hasta la raíz cuadrada del número.
+// VIDEO: https://asciinema.org/a/0RYw9zXLVMRkOudRfWjDc2DHf
 //************************************************
 
 .data
@@ -86,3 +87,66 @@ fin:
     mov     w0, #0                  // Retornar 0
     ldp     x29, x30, [sp], 16      // Restaurar frame pointer y link register
     ret
+
+//C#
+
+/* using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            // Solicitar al usuario que ingrese un número
+            Console.Write("Ingrese un número para verificar si es primo: ");
+            int numero = int.Parse(Console.ReadLine());
+
+            // Verificar que el número sea mayor que 1
+            if (numero <= 1)
+            {
+                Console.WriteLine("Error: Debe ingresar un número mayor que 1.");
+                return;
+            }
+
+            // Determinar si el número es primo
+            bool esPrimo = EsPrimo(numero);
+
+            // Mostrar el resultado
+            if (esPrimo)
+            {
+                Console.WriteLine($"El número {numero} es primo.");
+            }
+            else
+            {
+                Console.WriteLine($"El número {numero} no es primo.");
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: Entrada no válida. Por favor ingrese un número entero.");
+        }
+    }
+
+    static bool EsPrimo(int numero)
+    {
+        // Inicializar el divisor en 2
+        int divisor = 2;
+
+        // Iterar hasta la raíz cuadrada del número
+        while (divisor * divisor <= numero)
+        {
+            // Si el número es divisible por el divisor, no es primo
+            if (numero % divisor == 0)
+            {
+                return false;
+            }
+
+            divisor++;
+        }
+
+        // Si no fue divisible por ningún número, es primo
+        return true;
+    }
+}
+*/
