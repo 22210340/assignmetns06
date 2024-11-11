@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que permite establecer, borrar
 // y alternar bits específicos en un número
+// VIDEO: https://asciinema.org/a/yZRtHNyo6NU835U87Lxr7GsPL
 //************************************************
 
     .data
