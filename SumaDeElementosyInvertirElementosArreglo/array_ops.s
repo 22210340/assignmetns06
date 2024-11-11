@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que suma elementos de un arreglo
 // y permite invertir el orden de los elementos
+// VIDEO: https://asciinema.org/a/nT2uPXfVRc468kZ68s0J2bOqt
 //************************************************
 
 .data
