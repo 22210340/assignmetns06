@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que calcula la longitud de
 // una cadena ingresada por el usuario
+//VIDEO: https://asciinema.org/a/2fNZmatOyvtvtQE3yOBJ678SM
 //************************************************
 
     .data
