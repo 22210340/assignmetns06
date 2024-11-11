@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que encuentra el segundo
 // elemento más grande en un arreglo
+// VIDEO: https://asciinema.org/a/uwhreJ2Kx1jaMtBgn5SSUogf0
 //************************************************
 
 .data
