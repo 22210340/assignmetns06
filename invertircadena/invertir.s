@@ -3,6 +3,7 @@
 // Descripción: Programa que invierte una cadena ingresada por el usuario.
 // Por ejemplo: "Hola" -> "aloH"
 // El programa lee una cadena, la invierte y muestra el resultado.
+// VIDEO: https://asciinema.org/a/tTX7U3CHpXlC6zQICH3HrKeK2
 //************************************************
 
 .data
@@ -79,3 +80,32 @@ fin_inversion:
     mov     w0, #0                  // Retornar 0
     ldp     x29, x30, [sp], 16      // Restaurar frame pointer y link register
     ret
+
+    //C# 
+
+    /* #include <stdio.h>
+#include <string.h>
+
+int main() {
+    char buffer[100], invertida[100];
+    
+    // Solicitar la cadena
+    printf("Ingrese una cadena (máximo 100 caracteres): ");
+    scanf("%99s", buffer);  // Leer hasta 99 caracteres
+    
+    // Mostrar la cadena original
+    printf("Cadena original: %s\n", buffer);
+    
+    // Invertir la cadena
+    int len = strlen(buffer);
+    for (int i = 0; i < len; i++) {
+        invertida[i] = buffer[len - 1 - i];
+    }
+    invertida[len] = '\0';  // Agregar el terminador nulo
+    
+    // Mostrar la cadena invertida
+    printf("Cadena invertida: %s\n", invertida);
+    
+    return 0;
+}
+*/
