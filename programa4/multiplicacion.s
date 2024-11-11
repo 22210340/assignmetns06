@@ -3,6 +3,7 @@
 // Descripción: Programa en ensamblador ARM64 que solicita dos números  
 //              al usuario y realiza la multiplicación entre ellos, 
 //              mostrando el resultado en pantalla.
+// VIDEO: https://asciinema.org/a/9ZAak4Zf7VGsnPosSyfDwIo8c
 // *********************************************************************
 
 .global _start
@@ -142,3 +143,60 @@ convert_digit:
     b convert_digit
 end_convert:
     ret
+
+    //C#
+
+    /* using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            // Solicitar el primer número
+            Console.Write("Ingrese primer número: ");
+            string input1 = Console.ReadLine();
+            int num1 = AsciiToInt(input1);
+
+            // Solicitar el segundo número
+            Console.Write("Ingrese segundo número: ");
+            string input2 = Console.ReadLine();
+            int num2 = AsciiToInt(input2);
+
+            // Realizar la multiplicación
+            int resultado = num1 * num2;
+
+            // Mostrar el resultado
+            Console.WriteLine("La multiplicación es: " + resultado);
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: La entrada no es un número válido.");
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Error: El resultado de la multiplicación es demasiado grande.");
+        }
+    }
+
+    // Función para convertir un string ASCII a un entero
+    static int AsciiToInt(string asciiInput)
+    {
+        int result = 0;
+
+        foreach (char digitChar in asciiInput)
+        {
+            if (digitChar == '\n' || digitChar == '\r') continue; // Ignorar salto de línea
+            int digit = digitChar - '0'; // Convertir carácter a dígito
+            if (digit < 0 || digit > 9)
+            {
+                throw new FormatException("Caracter no válido en la entrada.");
+            }
+            result = result * 10 + digit;
+        }
+
+        return result;
+    }
+}
+*/
