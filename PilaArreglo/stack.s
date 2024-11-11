@@ -1,6 +1,7 @@
 //************************************************
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Implementación de una cola usando un arreglo
+// VIDEO: https://asciinema.org/a/AOHoa9vZ6M8Wu9cpghzZxuuZ9
 //************************************************
 
 .data
