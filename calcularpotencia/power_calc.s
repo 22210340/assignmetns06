@@ -2,7 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que calcula la potencia de
 // un número (x^n) usando multiplicaciones sucesivas
-VIDEO: https://asciinema.org/a/kctY4J401HcnX0UArjGNyLRhQ
+// VIDEO: https://asciinema.org/a/kctY4J401HcnX0UArjGNyLRhQ
 //************************************************
 
     .data
