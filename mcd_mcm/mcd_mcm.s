@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que calcula el MCD y MCM
 // de dos números usando el algoritmo de Euclides
+// VIDEO: https://asciinema.org/a/NnOIGa8ZQKaUxNCiUeYJn8Hfr
 //************************************************
 
     .data
