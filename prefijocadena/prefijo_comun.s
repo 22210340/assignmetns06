@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que encuentra el prefijo común
 // más largo entre varias cadenas
+// VIDEO: https://asciinema.org/a/zExf9WmOOIAo1uw5eMEppFxfH
 //************************************************
 .data
 msg_bienvenida: .string "\n=== BUSCADOR DE PREFIJO COMÚN MÁS LARGO ===\n"
