@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que cuenta el número de bits
 // activados (1's) en un número
+// VIDEO: https://asciinema.org/a/Nw3hJqgWxdN5KUw8mnYisuzfD
 //************************************************
 
     .data
