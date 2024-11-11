@@ -3,6 +3,7 @@
 // Descripción: Programa que encuentra el valor máximo en un arreglo de números.
 // El usuario ingresa la cantidad de números y luego los números uno por uno.
 // El programa muestra el arreglo completo y encuentra el valor máximo.
+// VIDEO: https://asciinema.org/a/fwHVCTscf5o0E4ujqyQkSQaxE
 //************************************************
 
 .data
@@ -114,3 +115,56 @@ fin:
     mov     w0, #0
     ldp     x29, x30, [sp], 16
     ret
+
+    //C# 
+
+    /* using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Solicitar tamaño del arreglo
+        Console.WriteLine("Ingrese la cantidad de números (máximo 20): ");
+        int size = int.Parse(Console.ReadLine());
+
+        // Verificar que el tamaño sea válido (entre 1 y 20)
+        if (size < 1 || size > 20)
+        {
+            Console.WriteLine("El tamaño debe estar entre 1 y 20.");
+            return;
+        }
+
+        // Inicializar el arreglo
+        int[] array = new int[size];
+
+        // Leer los números
+        for (int i = 0; i < size; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i + 1}: ");
+            array[i] = int.Parse(Console.ReadLine());
+        }
+
+        // Mostrar el arreglo ingresado
+        Console.WriteLine("\nArreglo ingresado:");
+        for (int i = 0; i < size; i++)
+        {
+            Console.Write(array[i] + " ");
+        }
+        Console.WriteLine();
+
+        // Encontrar el valor máximo en el arreglo
+        int max = array[0]; // Inicializar el máximo con el primer elemento
+        for (int i = 1; i < size; i++)
+        {
+            if (array[i] > max)
+            {
+                max = array[i];
+            }
+        }
+
+        // Mostrar el valor máximo encontrado
+        Console.WriteLine($"\nEl valor máximo es: {max}");
+    }
+}
+*/ 
