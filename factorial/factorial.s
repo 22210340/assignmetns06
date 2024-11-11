@@ -4,6 +4,7 @@
 // ingresado por el usuario. El factorial de un número n (n!)
 // es el producto de todos los números enteros positivos desde 1 hasta n.
 // Por ejemplo: 5! = 5 * 4 * 3 * 2 * 1 = 120
+// VIDEO: https://asciinema.org/a/YGxYBmQTSgApuT5UNJztG77t1
 //************************************************
 
 .data
@@ -55,3 +56,46 @@ print_result:
     mov     w0, #0                  // Retornar 0
     ldp     x29, x30, [sp], 16      // Restaurar frame pointer y link register
     ret
+
+//C# 
+
+/* using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            // Solicitar al usuario un número entre 1 y 20
+            Console.Write("Ingrese un número para calcular su factorial (1-20): ");
+            int numero = int.Parse(Console.ReadLine());
+
+            // Verificar que el número esté en el rango permitido
+            if (numero < 1 || numero > 20)
+            {
+                Console.WriteLine("Error: El número debe estar entre 1 y 20.");
+                return;
+            }
+
+            // Calcular el factorial
+            long factorial = 1;
+            for (int i = 1; i <= numero; i++)
+            {
+                factorial *= i;
+            }
+
+            // Imprimir el resultado
+            Console.WriteLine($"El factorial de {numero} es: {factorial}");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: Entrada no válida. Por favor ingrese un número entero.");
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine("Error: El número ingresado es demasiado grande para calcular el factorial.");
+        }
+    }
+}
+*/
