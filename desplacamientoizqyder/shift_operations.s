@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que realiza desplazamientos
 // a la izquierda y derecha de números
+// VIDEO: https://asciinema.org/a/4wZmPHrpMKXVoUtokY7Pvz6A3
 //************************************************
 
     .data
