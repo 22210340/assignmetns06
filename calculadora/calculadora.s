@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Calculadora simple que realiza
 // operaciones básicas (suma, resta, multiplicación, división)
+// VIDEO: https://asciinema.org/a/Df2O4ojkWfN4jPeIRJBtiqpe8
 //************************************************
 
 .data
