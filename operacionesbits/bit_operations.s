@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que realiza operaciones AND, OR, XOR
 // a nivel de bits entre dos números
+// VIDEO: https://asciinema.org/a/UmcYv0G69R3nH3RMORoTUbqlk
 //************************************************
 
     .data
