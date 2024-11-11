@@ -3,6 +3,7 @@
 // Descripción: Implementación del algoritmo de ordenamiento por mezcla
 // El programa divide recursivamente el array en mitades, ordena cada mitad
 // y luego combina (merge) las mitades ordenadas
+// VIDEO: https://asciinema.org/a/nutUny1rhpEuceb9134Besah4
 //************************************************
 
     .data
