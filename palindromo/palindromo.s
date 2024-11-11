@@ -4,6 +4,7 @@
 // Un palíndromo es una palabra o frase que se lee igual de izquierda a derecha
 // que de derecha a izquierda, ignorando espacios y mayúsculas/minúsculas.
 // Ejemplos: "ana", "Anita lava la tina", "A man a plan a canal Panama"
+// VIDEO: https://asciinema.org/a/TD00PqFaW9fQNZZINuGwC40tH
 //************************************************
 
 .data
@@ -108,3 +109,45 @@ fin:
     mov     w0, #0
     ldp     x29, x30, [sp], 16
     ret
+//C# 
+
+/* #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+int main() {
+    char buffer[100], limpia[100];
+    
+    // Solicitar la cadena
+    printf("Ingrese una cadena (máximo 100 caracteres): ");
+    fgets(buffer, 100, stdin);  // Leer la cadena incluyendo espacios
+    
+    // Limpiar la cadena (eliminar no alfabéticos y convertir a minúsculas)
+    int j = 0;
+    for (int i = 0; buffer[i] != '\0'; i++) {
+        if (isalpha(buffer[i])) {
+            limpia[j++] = tolower(buffer[i]);
+        }
+    }
+    limpia[j] = '\0';  // Terminar la cadena limpia
+    
+    // Verificar si la cadena es un palíndromo
+    int len = strlen(limpia);
+    int is_palindrome = 1;
+    for (int i = 0; i < len / 2; i++) {
+        if (limpia[i] != limpia[len - 1 - i]) {
+            is_palindrome = 0;
+            break;
+        }
+    }
+    
+    // Imprimir el resultado
+    if (is_palindrome) {
+        printf("La cadena \"%s\" ES un palindromo\n", buffer);
+    } else {
+        printf("La cadena \"%s\" NO es un palindromo\n", buffer);
+    }
+    
+    return 0;
+}
+*/
