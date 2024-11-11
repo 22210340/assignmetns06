@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que convierte un número
 // binario a decimal
+//VIDEO: https://asciinema.org/a/VQmkZlWZ0WRrOzg0JMbpQAsYe
 //************************************************
 
 .data
