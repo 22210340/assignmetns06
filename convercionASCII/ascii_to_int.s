@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que convierte un carácter ASCII
 // a su valor entero correspondiente
+// VIDEO: https://asciinema.org/a/JtHpTZ9UBVj6Ws04usaw3aBtO
 //************************************************
 
     .data
