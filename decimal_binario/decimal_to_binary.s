@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que convierte números 
 // decimales a su representación binaria
+// VIDEO: https://asciinema.org/a/ObVo4QRL8FcrAZaVpu0DZIljx
 //************************************************
 
 .data
