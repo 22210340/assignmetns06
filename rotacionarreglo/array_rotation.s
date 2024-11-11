@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que realiza rotaciones
 // a la izquierda y derecha de un arreglo
+// VIDEO: https://asciinema.org/a/D8MJXCH62pJ1rLEd0xVa72tOU
 //************************************************
 
 .data
