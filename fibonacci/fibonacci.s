@@ -4,6 +4,7 @@
 // ingresado por el usuario. La serie de Fibonacci es una secuencia donde cada
 // número es la suma de los dos anteriores, comenzando con 0 y 1.
 // Ejemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+// VIDEO: https://asciinema.org/a/JBfTbkzuK7XdoQX1aHa8blBNk
 //************************************************
 
 .data
@@ -77,3 +78,51 @@ end_program:
     mov     w0, #0
     ldp     x29, x30, [sp], 16
     ret
+
+//C#
+
+/* using System;
+
+class Program
+{
+    static void Main()
+    {
+        try
+        {
+            // Solicitar al usuario el número de términos de la serie de Fibonacci
+            Console.Write("Ingrese el número de términos de Fibonacci a generar (1-47): ");
+            int n = int.Parse(Console.ReadLine());
+
+            // Verificar que el número esté en el rango permitido
+            if (n < 1 || n > 47)
+            {
+                Console.WriteLine("Error: El número debe estar entre 1 y 47.");
+                return;
+            }
+
+            Console.WriteLine($"Serie de Fibonacci hasta el término {n}:");
+
+            // Inicializar los primeros términos de la serie
+            long first = 0, second = 1;
+
+            for (int i = 1; i <= n; i++)
+            {
+                // Imprimir el término actual, con o sin coma según sea el último
+                if (i == n)
+                    Console.WriteLine(first);
+                else
+                    Console.Write($"{first}, ");
+
+                // Calcular el siguiente término de la serie
+                long next = first + second;
+                first = second;
+                second = next;
+            }
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: Entrada no válida. Por favor ingrese un número entero.");
+        }
+    }
+}
+*/
