@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que convierte un número
 // decimal a hexadecimal
+// VIDEO: https://asciinema.org/a/l00UhczpKVVN9HDl2RmBlnuOX
 //************************************************
 
 .data
