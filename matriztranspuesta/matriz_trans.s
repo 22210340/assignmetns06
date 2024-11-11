@@ -7,6 +7,7 @@
 //    gcc matriz_trans.o -o matriz_trans
 // Ejecución:
 //    ./matriz_trans
+// VIDEO: https://asciinema.org/a/UvtNXOff5ZNlofdvZ5PQuMyEj
 //************************************************
 
     .arch armv8-a              // Especifica la arquitectura ARMv8-A
