@@ -2,6 +2,7 @@
 // Autor: Kevin Rivas/IA Claude
 // Descripción: Programa que cuenta vocales y consonantes
 // en una cadena ingresada por el usuario
+// VIDEO: https://asciinema.org/a/7xF3W8L8R3eoQbi3gqdGqOWTN
 //************************************************
 
     .data
