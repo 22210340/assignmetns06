@@ -4,6 +4,7 @@
 // El programa encuentra el elemento más pequeño del arreglo y lo 
 // intercambia con el primer elemento, luego encuentra el segundo
 // más pequeño y lo intercambia con el segundo elemento, y así sucesivamente
+// VIDEO: https://asciinema.org/a/lLv1Gj5kAggFt6E2eWWvcPq2D
 //************************************************
 
     .data
