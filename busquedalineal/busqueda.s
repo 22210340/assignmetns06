@@ -3,6 +3,7 @@
 // Descripción: Programa que realiza una búsqueda lineal en un arreglo.
 // El usuario ingresa los números del arreglo y luego un número a buscar.
 // El programa muestra si el número fue encontrado y en qué posición.
+// VIDEO: https://asciinema.org/a/amJBhToyB87bUn3PtliAwHxd5
 //************************************************
 
 .data
@@ -132,3 +133,69 @@ fin:
     mov     w0, #0
     ldp     x29, x30, [sp], 16
     ret
+
+    //C# 
+
+    /* using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Solicitar tamaño del arreglo
+        Console.WriteLine("Ingrese la cantidad de números (máximo 20): ");
+        int size = int.Parse(Console.ReadLine());
+
+        // Verificar que el tamaño sea válido (entre 1 y 20)
+        if (size < 1 || size > 20)
+        {
+            Console.WriteLine("El tamaño debe estar entre 1 y 20.");
+            return;
+        }
+
+        // Inicializar el arreglo
+        int[] array = new int[size];
+
+        // Leer los números en el arreglo
+        for (int i = 0; i < size; i++)
+        {
+            Console.WriteLine($"Ingrese el número {i + 1}: ");
+            array[i] = int.Parse(Console.ReadLine());
+        }
+
+        // Mostrar el arreglo ingresado
+        Console.WriteLine("\nArreglo ingresado:");
+        foreach (int num in array)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine();
+
+        // Solicitar número a buscar
+        Console.WriteLine("\nIngrese el número a buscar: ");
+        int buscar = int.Parse(Console.ReadLine());
+
+        // Buscar el número en el arreglo
+        int position = -1; // -1 indica que no se ha encontrado
+
+        for (int i = 0; i < size; i++)
+        {
+            if (array[i] == buscar)
+            {
+                position = i; // Encontrado en la posición i
+                break;
+            }
+        }
+
+        // Mostrar el resultado de la búsqueda
+        if (position >= 0)
+        {
+            Console.WriteLine($"\nEl número {buscar} fue encontrado en la posición {position + 1}");
+        }
+        else
+        {
+            Console.WriteLine($"\nEl número {buscar} no fue encontrado en el arreglo");
+        }
+    }
+}
+*/
