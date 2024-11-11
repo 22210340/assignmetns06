@@ -3,6 +3,7 @@
 // Descripción: Implementación del algoritmo de ordenamiento burbuja
 // El programa ordena un arreglo de números enteros de menor a mayor
 // usando el método de burbuja
+// VIDEO: https://asciinema.org/a/zobEPcxnYsIx99ySVw6KBS5O6
 //************************************************
 
     .data
